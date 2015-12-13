@@ -237,9 +237,9 @@ class Octave < Formula
     if build.without?("osmesa") || (build.with?("osmesa") && build.with?("opengl"))
       s += <<-EOS.undent
 
-      When using the the qt or fltk toolkits then invisible figures do not work because
-      osmesa does currently not work with the Mac's OpenGL implementation. The usage of
-      gnuplot is recommened.
+      When using the qt or fltk toolkits, invisible figures do not work because
+      osmesa currently does not work with the Mac's OpenGL implementation. The usage of
+      gnuplot is recommended.
 
       EOS
     end
